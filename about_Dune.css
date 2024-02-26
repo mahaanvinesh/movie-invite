@@ -1,0 +1,44 @@
+body {
+    margin: 30px;
+    padding: 0;
+    background-image: url('Dune.jpg'); /* Replace 'your-image-url.jpg' with your image URL */
+    background-size: fill;
+    background-position: center;
+  }
+  
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    filter: blur(5px); /* Adjust the blur radius as needed */
+    z-index: -1;
+  }
+  
+  
+.Dune-intro{
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    text-align: center;
+    color: #ffffff;
+
+}
+.aboutDune{
+
+    width: 400px; /* Width of the box */
+    height: 300px; /* Height of the box */
+    border: 0px solid #000; /* Border style */
+    padding: 20px; /* Padding inside the box */
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.527), rgba(228, 186, 95, 0.5));
+    margin: 20px;   
+    border-radius: 15px;   
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.3);
+    flex: auto;
+}
