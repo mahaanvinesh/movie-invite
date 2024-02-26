@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free for a movie?</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+
+<body>
+    <div class="container">
+        <div >
+            <h1 class = "header_text">Do you wanna go for a movie with me?</h1>
+        </div>
+        <br>
+        <div class="gif_container">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjI5cTY0c296bDVqZjNsdXJxZnp3bTI3bmVtd3YyOHE1ODQwc2VyOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7rc0qU6m5hneMsuc/giphy.gif" alt="Cute animated illustration">
+        </div>
+
+
+    <div class="message">
+        <p>
+            <p style="text-align: center;">I kindly invite you for a movie on 29th of February</p>
+            <br>
+            Day: <b style="color: rgb(70, 193, 241);">Thursday</b>.
+            <br>
+            Timings: <b style="color: rgb(70, 193, 241);">11'o clock</b>
+            <br>
+            Place: <a href="https://maps.app.goo.gl/oUDt1hxmqkdigVtD8">Here</a>.
+            <br>
+            Movie: <a href="about_Dune.html"><b>DUNE: PART 2</b></a>
+        </p>
+    </div>
+    <br><br>
+    <div class = "buttons">
+        <button class="btn" id ="yesButton" onclick="nextPage()"><a href="yes.html"></a>Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+            
+            function moveButton() {
+                var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                document.getElementById('noButton').style.left = `${x}px`;
+                document.getElementById('noButton').style.top = `${y}px`;
+            }
+        </script> 
+    </div>
+</body>
+</html>
